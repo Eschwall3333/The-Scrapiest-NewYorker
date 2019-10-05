@@ -3,9 +3,7 @@ const method = require("method-override");
 const body = require("body-parser");
 const exMoustache = require("express-handlebars");
 const mongoose = require("mongoose");
-const logger = require("morgan");
 const cheerio = require("cheerio");
-const request = require("request");
 
 const Note = require("./models/Note");
 const Article = require("./models/Article");
@@ -58,7 +56,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/scrape", function(req, res) {
-	request("https://www.nytimes.com/section/us", function(error, response, html) {
+	function("https://www.nytimes.com/section/us", function(error, response, html) {
 		let $ = cheerio.load(html);
 		let result = {};
 		$("div.story-body").each(function(i, element) {
