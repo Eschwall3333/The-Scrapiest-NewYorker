@@ -1,0 +1,31 @@
+{
+  "name": "The-Scrapiest-NewYorker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eschwall3333/The-Scrapiest-NewYorker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eschwall3333/The-Scrapiest-NewYorker/issues"
+  },
+  "homepage": "https://github.com/Eschwall3333/The-Scrapiest-NewYorker#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.7.3",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+  }
+}
