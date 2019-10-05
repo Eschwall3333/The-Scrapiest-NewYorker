@@ -56,7 +56,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/scrape", function(req, res) {
-	function("https://www.nytimes.com/section/us", function(error, response, html) {
+	request("https://www.nytimes.com/section/us", function(error, response, html) {
 		let $ = cheerio.load(html);
 		let result = {};
 		$("div.story-body").each(function(i, element) {
