@@ -4,9 +4,9 @@ const body = require("body-parser");
 const exMoustache = require("express-handlebars");
 const mongoose = require("mongoose");
 const cheerio = require("cheerio");
-
-const Note = require("./models/Note");
-const Article = require("./models/Article");
+const logger = require ("morgan");
+const Note = require("./models/theNote");
+const Article = require("./models/newsArt");
 const databaseUrl = 'mongodb://localhost/scrap';
 
 if (process.env.MONGODB_URI) {
